@@ -7,11 +7,6 @@ matplotlib
 scikit-learn
 
 easyocr
-paddlepaddle
-paddleocr
 
 streamlit
 PyYAML
-
-jupyter
-ipykernel

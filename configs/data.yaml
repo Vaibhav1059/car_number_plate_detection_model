@@ -1,0 +1,7 @@
+path: D:/ml_project/anpr/data/yolo_dataset
+
+train: images/train
+val: images/val
+
+nc: 1
+names: ["license_plate"]

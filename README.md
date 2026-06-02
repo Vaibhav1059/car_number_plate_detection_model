@@ -2,27 +2,41 @@
 
 ## 📌 Project Overview
 
-This project implements an **Automatic Number Plate Recognition (ANPR)** system using:
+This project implements an **Automatic Number Plate Recognition (ANPR)** system using advanced Computer Vision and OCR techniques. The application automatically detects vehicle license plates from images and extracts the registration number with confidence scores through an interactive web interface.
 
-- YOLOv8 for license plate detection
-- EasyOCR for text extraction
-- Streamlit for web interface
+### 🔗 Live Demo
 
-The system detects vehicle number plates from images and extracts the text along with confidence scores.
+https://carnumberplatedetectionmodel-hmlev3rcv9q5vbsbehmgrg.streamlit.app/
+
+### 🔗 GitHub Repository
+
+https://github.com/Vaibhav1059/car_number_plate_detection_model
+
+### 🛠️ Technologies Used
+
+* YOLOv8 (Ultralytics)
+* EasyOCR
+* OpenCV
+* Python
+* Streamlit
+* NumPy
 
 ---
 
 ## ⚙️ Features
 
-- 📍 License plate detection using YOLOv8
-- 🔤 OCR text extraction (English + Hindi support)
-- 📊 Confidence scoring for detection and OCR
-- 🖼️ Image upload interface using Streamlit
-- ⚠️ Low-confidence detection warning system
+* 📍 License Plate Detection using YOLOv8
+* 🔤 OCR-based Text Extraction
+* 🌐 English and Hindi Number Plate Support
+* 📊 Detection & OCR Confidence Scores
+* 🖼️ User-Friendly Streamlit Interface
+* ⚠️ Low-Confidence Detection Warning System
+* 🚀 End-to-End Automated ANPR Pipeline
 
 ---
 
 ## 📂 Project Structure
+
 ANPR/
 │
 ├── data/
@@ -44,88 +58,91 @@ ANPR/
 │
 └── requirements.txt
 
-
 ---
 
 ## 🚀 Installation
 
-### 1. Clone the repository
-git clone <repo-url>
-cd ANPR
+### Clone Repository
 
-### 2. Create environment
+git clone https://github.com/Vaibhav1059/car_number_plate_detection_model.git
 
+cd car_number_plate_detection_model
+
+### Create Virtual Environment
 
 conda create -n anpr python=3.10
+
 conda activate anpr
 
-
-### 3. Install dependencies
-
+### Install Dependencies
 
 pip install -r requirements.txt
 
-
 ---
 
-## ▶️ Run the Application
-
+## ▶️ Run Application
 
 streamlit run streamlit_app/app.py
-
 
 ---
 
 ## 🧪 Usage
 
-1. Upload an image of a vehicle
-2. The system will:
-   - Detect the number plate
-   - Extract text
-   - Show confidence scores
-
----
-
-## ⚠️ Limitations
-
-- OCR accuracy may vary depending on:
-  - Lighting conditions
-  - Image quality
-  - Font variations
-- Works best on clear and front-facing number plates
-- Not optimized for real-time video
+1. Upload a vehicle image.
+2. The system detects the license plate.
+3. OCR extracts the plate number.
+4. Detection and OCR confidence scores are displayed.
+5. Review results directly in the Streamlit interface.
 
 ---
 
 ## 🧠 Technical Details
 
-### Detection
-- Model: YOLOv8 (Ultralytics)
-- Trained on custom license plate dataset
+### Detection Model
 
-### OCR
-- Engine: EasyOCR
-- Multi-preprocessing approach used for better accuracy
+* YOLOv8 (Ultralytics)
+* Custom-trained License Plate Dataset
+* Bounding Box Detection
+
+### OCR Engine
+
+* EasyOCR
+* Multi-stage Image Preprocessing
+* Confidence-Based Text Recognition
 
 ---
 
 ## 📈 Future Improvements
 
-- Improve OCR using PaddleOCR or custom model
-- Add real-time video processing
-- Deploy on cloud (AWS / Render)
-- Enhance dataset for better generalization
+* Real-Time Video Processing
+* Vehicle Entry/Exit Logging System
+* Database Integration (MySQL/PostgreSQL)
+* Parking Management Dashboard
+* PaddleOCR Integration
+* Cloud Deployment (AWS, Azure, GCP)
+* Mobile-Friendly Interface
 
 ---
 
-## 👨‍💻 Authors
+## ⚠️ Limitations
 
-- Shrestha Swami
-- Bhumi Porwal
-- Vaibhav Soni
+* OCR accuracy depends on image quality.
+* Performance may decrease under poor lighting conditions.
+* Best results are achieved with clear front-facing number plates.
+* Currently optimized for image-based processing.
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates a complete end-to-end pipeline for number plate detection and recogniti
+This project demonstrates a complete end-to-end AI-powered Automatic Number Plate Recognition (ANPR) pipeline, integrating object detection and optical character recognition to automate vehicle identification tasks. It showcases practical applications of Computer Vision, Deep Learning, and OCR technologies in real-world scenarios such as traffic monitoring, parking management, and security systems.
+
+---
+
+### 👨‍💻 Author
+
+**Vaibhav Soni**
+
+GitHub: https://github.com/Vaibhav1059
+
+LinkedIn: https://www.linkedin.com/in/vaibhav-soni/
